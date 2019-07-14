@@ -1,0 +1,28 @@
+inherit_from: .rubocop_todo.yml
+
+Layout/SpaceAfterComma:
+  Exclude:
+    - 'spec/spec_helper.rb'
+
+Metrics/BlockLength:
+  Max: 50
+
+Style/Documentation:
+  Exclude:
+    - 'spec/**/*'
+    - 'test/**/*'
+    - 'lib/**/*'
+
+Style/EmptyMethod:
+  Exclude:
+    - 'lib/game_window.rb'
+
+Style/StringLiterals:
+  Exclude:
+    - 'Gemfile'
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 20
